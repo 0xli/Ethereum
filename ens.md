@@ -1,4 +1,6 @@
 TESTED on rinkeby
+> loadScript('ensutils-rinkeby.js')
+ 
 > new Date(testRegistrar.expiryTimes(web3.sha3('allcomsh')).toNumber() * 1000)
 <Date Thu, 01 Jan 1970 08:00:00 CST>
 
