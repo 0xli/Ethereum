@@ -11,6 +11,9 @@ TESTED on rinkeby
 "0x38a0f104f16c8da8e64e2363f6f29385a91e5af99f411b38f62f4fe21f211a4d"
 
 Once that transaction is mined (you can use etherscan to do so), tell the resolver to resolve that name to your account:
+web3.eth.getTransactionReceipt('0x38a0f104f16c8da8e64e2363f6f29385a91e5af99f411b38f62f4fe21f211a4d')
+It will return null for pending transactions and an object if the transaction is successful.
+https://stackoverflow.com/questions/49886370/web3j-how-to-get-transaction-status
 
 > publicResolver.setAddr(namehash('allcomsh.test'), eth.accounts[0], {from: eth.accounts[0]});
 "0xba965a939b8d8a823dc546e9ddd7fedc210e20a078be2b4f15e2ae5e8b440b3b"
