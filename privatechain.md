@@ -24,12 +24,44 @@ geth attach .acpriviatechain/geth.ipc
 2915
 
 #1 node
+1.1 Initial 
+[liwei@osdnode173 ethereum]$ geth --identity 'allcomsh' init CustomGenesis.json  --datadir .acpriviatechain
+INFO [08-30|19:40:52.127] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [08-30|19:40:52.129] Allocated cache and file handles         database=/data/ethereum/.acpriviatechain/geth/chaindata cache=16 handles=16
+INFO [08-30|19:40:52.939] Writing custom genesis block 
+INFO [08-30|19:40:52.944] Persisted trie from memory database      nodes=0 size=0.00B time=27.307µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [08-30|19:40:52.944] Successfully wrote genesis state         database=chaindata                                      hash=d1a12d…4c8725
+INFO [08-30|19:40:52.944] Allocated cache and file handles         database=/data/ethereum/.acpriviatechain/geth/lightchaindata cache=16 handles=16
+INFO [08-30|19:40:53.039] Writing custom genesis block 
+INFO [08-30|19:40:53.039] Persisted trie from memory database      nodes=0 size=0.00B time=6.146µs  gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [08-30|19:40:53.039] Successfully wrote genesis state         database=lightchaindata                                      hash=d1a12d…4c8725
+[liwei@osdnode173 ethereum]$ ls .acpriviatechain/
+geth  keystore
+
+1.2. Run
 geth --datadir .acpriviatechain --networkid 9876 --nodiscover --rpcapi db,eth,net,web3,miner,shh --rpc --rpccorsdomain * --mine --shh
+
 geth attach .acpriviatechain/geth.ipc
 > admin.nodeInfo.enode
 "enode://79576658aca4621e198d7ecaaef185fb6407135cde68f2cd036c6eb2703bd56c0ea4c39fa71746f6e8c86091b8d3d0f4ad133dbb28b714c2eca37fb144cc4bf5@[::]:30303?discport=0"
 > 
+
 #2 node
+2.1 Initial 
+
+[liwei@localhost ethereum]$ geth --datadir .peer2DataDir init CustomGenesis.json 
+INFO [08-30|20:47:45.369] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [08-30|20:47:45.385] Allocated cache and file handles         database=/data/ethereum/.peer2DataDir/geth/chaindata cache=16 handles=16
+INFO [08-30|20:47:45.501] Writing custom genesis block 
+INFO [08-30|20:47:45.501] Persisted trie from memory database      nodes=0 size=0.00B time=30.765µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [08-30|20:47:45.502] Successfully wrote genesis state         database=chaindata                                   hash=d1a12d…4c8725
+INFO [08-30|20:47:45.502] Allocated cache and file handles         database=/data/ethereum/.peer2DataDir/geth/lightchaindata cache=16 handles=16
+INFO [08-30|20:47:45.619] Writing custom genesis block 
+INFO [08-30|20:47:45.619] Persisted trie from memory database      nodes=0 size=0.00B time=5.86µs   gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [08-30|20:47:45.619] Successfully wrote genesis state         database=lightchaindata                                   hash=d1a12d…4c8725
+
+2.2 Run
+
 geth --datadir .peer2DataDir --networkid 9876 --port 30304 --shh
 > admin.addPeer('enode://79576658aca4621e198d7ecaaef185fb6407135cde68f2cd036c6eb2703bd56c0ea4c39fa71746f6e8c86091b8d3d0f4ad133dbb28b714c2eca37fb144cc4bf5@192.168.0.173:30303?discport=0')
 the “[::]” is replaced with “192.168.0.173” which is the IP:Port of the 1st peer.
