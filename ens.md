@@ -1,6 +1,36 @@
 Develop and run on geth console is different:
 1. For development
 https://medium.com/the-ethereum-name-service/adding-ens-into-your-dapp-72eb6deac26b
+Using network 'development'.
+
+Running migration: 2_deploy_contracts.js
+  Replacing ConvertLib...
+  ... 0x7fb3ebb3c4971f445edf05a9c101643b8ba972b9551d954fb663fdafbaa3d6ff
+  ConvertLib: 0xe9ef845ea68883d1db74a0eff148fe858c4a9870
+  Linking ConvertLib to MetaCoin
+  Replacing MetaCoin...
+  ... 0xd4f90d3821062ad6ad5c3a793790c1efc7b91597842294ae33b833e6d4d25524
+  MetaCoin: 0x522ea0c21d39e96285fcd9ede7b7aa8c17f4f26b
+  Deploying ENSRegistry...
+  ... 0x857960ddf74e8a29dbd9448c8928f2c246bd58da9f31f318178318047fbc1870
+  ENSRegistry: 0xcfd1b552c18f84eabf691626496f5c4a57b1daf7
+  Deploying PublicResolver...
+  ... 0x923fb52953ac587752f8b3c008a75399d5717169b3d839936cd0e9fd4b122434
+  PublicResolver: 0xb8e7336117be16da470546c132bfc51e9ee73a77
+  Deploying ReverseRegistrar...
+  ... 0x7f525269eb4e9f956028ea2d350dd5ddb458a780ebfe3ef8611db0e71e01f681
+  ReverseRegistrar: 0x927591c853018bf74e2fa1a0c8bdd77deaae7130
+setSubnodeOwner:0xcfd1b552c18f84eabf691626496f5c4a57b1daf7 allcom.test
+  ... 0xd1129c1ce25baa2db0ca46df6e849edddca3435b11ff720a8345fe78f33b2e97
+setSubnodeOwner:0xcfd1b552c18f84eabf691626496f5c4a57b1daf7 0xee95143def53f4b012f25d6f1609f969edbacb89
+  ... 0x7e8585d166cee7fd6e1e83825747864e70c082434da5a538680cdb26f9340930
+setSubnodeOwner:0x927591c853018bf74e2fa1a0c8bdd77deaae7130 0xee95143def53f4b012f25d6f1609f969edbacb89
+  ... 0xa0ada1ae11330d848f467d950663885ab69cee5a2c55eec409595f3f912a5ad8
+Saving successful migration to network...
+  ... 0x95d2d20da5272f8d80030b854efe495447503641b2c58b167f5de6364c55263d
+Saving artifacts...
+
+
 2. Run on console of geth 
 
 TESTED on rinkeby
