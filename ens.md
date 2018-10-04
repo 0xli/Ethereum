@@ -1,3 +1,8 @@
+Develop and run on geth console is different:
+1. For development
+https://medium.com/the-ethereum-name-service/adding-ens-into-your-dapp-72eb6deac26b
+2. Run on console of geth 
+
 TESTED on rinkeby
 > loadScript('ensutils-rinkeby.js')
  
