@@ -7,7 +7,7 @@ docker volume ls
 DRIVER              VOLUME NAME
 local               1107605ae01eb64e54a709ef611e4cd193d4933b8c0265ada047b54e3d4e69e9
 3. run geth
-docker run -it -p 8545:8545 -p 30303:30303 -v 1107605ae01eb64e54a709ef611e4cd193d4933b8c0265ada047b54e3d4e69e9:/root/.ethereum ethereum/client-go --rpc --rpcaddr "0.0.0.0" --testnet --shh
+docker run -it -p 8545:8545 -p 30303:30303 -v 1107605ae01eb64e54a709ef611e4cd193d4933b8c0265ada047b54e3d4e69e9:/root/.ethereum ethereum/client-go --rpc --rpcaddr "0.0.0.0"  --rpccorsdomain "*" --testnet --shh
 4. check geth container in docker
 docker ps
 CONTAINER ID        IMAGE                COMMAND                  CREATED             STATUS              PORTS                                                                   NAMES
