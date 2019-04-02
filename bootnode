@@ -1,0 +1,33 @@
+enode://156590cbd47139cdf5c8c99a93d8046fed590357cb5d66e13061bef707e192f08e38e11772d36a50e1c2858c1b3c3e9f90c61ea1f29420f2193f74527ba7ade6@127.0.0.1:0?discport=30301
+
+1. Install ethereum on centos
+1.1 go
+[root@localhost blockchain]# wget https://dl.google.com/go/go1.12.1.linux-amd64.tar.gz
+modify ~/.bash_profile add go/bin to PATH
+1.2 
+[root@localhost blockchain]#git clone https://github.com/ethereum/go-ethereum.git
+make install
+modify ~/.bash_profile add go-ethereum/build/bin to PATH
+
+2. Generate key for bootnode
+[root@localhost ethereum]# bootnode --genkey=boot.key
+[root@localhost ethereum]# ls
+boot.key  go-ethereum
+[root@localhost ethereum]# cat boot.key
+a4e0893846323c331e8b3f9e7edf526e08a12a2719a7cb341b60c9b8b1751997
+
+3. run bootnode
+[root@localhost ethereum]# bootnode -nodekey boot.key -verbosity 7
+enode://156590cbd47139cdf5c8c99a93d8046fed590357cb5d66e13061bef707e192f08e38e11772d36a50e1c2858c1b3c3e9f90c61ea1f29420f2193f74527ba7ade6@127.0.0.1:0?discport=30301
+Note: you're using cmd/bootnode, a developer tool.
+We recommend using a regular node as bootstrap node for production deployments.
+INFO [04-02|15:51:35.191] New local node record                    seq=1 id=d8ac619a4775efb0 ip=<nil> udp=0 tcp=0
+TRACE[04-02|15:56:16.219] << PING/v4                               id=36f6cf523bff24ea addr=192.168.0.173:30303 err=nil
+
+4. how geth use bootnode
+geth --datadir ./.datadir --networkid 2018 --bootnodes enode://156590cbd47139cdf5c8c99a93d8046fed590357cb5d66e13061bef707e192f08e38e11772d36a50e1c2858c1b3c3e9f90c61ea1f29420f2193f74527ba7ade6@[ip1]:0?discport=30301,enode://e0853f854d49cc78dcd21f77b0e45f24015302f6afbe665414d4fd06de10046617e2b3cb779c0b46d8028027be7e1af573732740e71a5c32076ade0fad4f73fa@[IP2]:0?discport=30301 --rpc --rpcapi db,eth,net,web3,personal,shh,miner --cache=1024  --rpcport 8545 --rpcaddr 0.0.0.0 --rpccorsdomain "*" --rpcvhosts=* --shh  console
+remember to replace [ip1] and [IP2] with the actual IP of your bootnode
+
+https://www.jianshu.com/p/1568a8097d7e
+bootnode简化了Ethereum客户端实现，它只参与网络节点发现协议，但不运行任何高级应用程序协议。它可以用作轻量级的引导节点，以帮助在私有网络中找到对等点。
+总而言之，就是一个用于节点发现或者说节点引导的轻量节点，方便联盟链的搭建~
