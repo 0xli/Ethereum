@@ -27,6 +27,10 @@ TRACE[04-02|15:56:16.219] << PING/v4                               id=36f6cf523b
 4. how geth use bootnode
 geth --datadir ./.datadir --networkid 2018 --bootnodes enode://156590cbd47139cdf5c8c99a93d8046fed590357cb5d66e13061bef707e192f08e38e11772d36a50e1c2858c1b3c3e9f90c61ea1f29420f2193f74527ba7ade6@[ip1]:0?discport=30301,enode://e0853f854d49cc78dcd21f77b0e45f24015302f6afbe665414d4fd06de10046617e2b3cb779c0b46d8028027be7e1af573732740e71a5c32076ade0fad4f73fa@[IP2]:0?discport=30301 --rpc --rpcapi db,eth,net,web3,personal,shh,miner --cache=1024  --rpcport 8545 --rpcaddr 0.0.0.0 --rpccorsdomain "*" --rpcvhosts=* --shh  console
 remember to replace [ip1] and [IP2] with the actual IP of your bootnode
+more bootnode
+"enode://7fd268ad023165f5ef4072d4079f32c25e96bb950693748ce213aabdeff016fd6a880d976c816bb8938fa7d2c65693519870ed3f640ad90295347446ddc8a583@192.168.0.1:30303"
+"enode://7fd268ad023165f5ef4072d4079f32c25e96bb950693748ce213aabdeff016fd6a880d976c816bb8938fa7d2c65693519870ed3f640ad90295347446ddc8a583@58.246.137.226:30303"
+"enode://995dd2c4cba1b6a05f67b7f9093a8d10b598b1edb5ae124106fc8d98095545ba747d200b61b37b26052755f10a9de93c9216d99f0dcd6f5e814738b2dec41133@47.252.16.104:30303"
 
 5. prepare geth
 geth --datadir .datadir init init.jso
