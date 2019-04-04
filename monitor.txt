@@ -2,6 +2,13 @@ https://medium.com/@jake.henningsgaard/monitoring-the-ethereum-blockchain-243840
 
 
 1. install front end
+1.1 install
+git clone https://github.com/cubedro/eth-netstats.git
+npm install
+sudo npm install -g grunt-cli
+grunt
+1.2 WS_SECRET=test npm start
+http://192.168.0.94:3000/
 2. install on every node to be monitored
 2.1 prepare:
 npm install pm2 -g 
