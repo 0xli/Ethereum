@@ -4,6 +4,7 @@ curl -H "Content-Type:image/jpeg" --data-binary @cat.jpg http://192.168.0.178:85
 fb45d1e785834e3a12842c4c26e00f4c7dd78c5aafd371017717b94c79c7694d
 2. view file
 http://192.168.0.178:8500/bzz:/fb45d1e785834e3a12842c4c26e00f4c7dd78c5aafd371017717b94c79c7694d/
+http://192.168.0.94:8500/bzz:/ced51576ea0ea29a8a2a1ac8844f5d215f73d47416c9398694867d755900c94a/
 
 HOW TO SETUP
 3. run swarm with geth node
