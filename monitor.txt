@@ -1,0 +1,35 @@
+https://medium.com/@jake.henningsgaard/monitoring-the-ethereum-blockchain-24384064fad3
+
+
+1. install front end
+2. install on every node to be monitored
+2.1 prepare:
+npm install pm2 -g 
+2.2 git clone https://github.com/cubedro/eth-net-intelligence-api.git
+[
+  {
+    "name"              : "my_private_network",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"        : false,
+    "watch"             : false,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"        : "production",
+      "RPC_HOST"        : "localhost",
+      "RPC_PORT"        : "8000",
+      "LISTENING_PORT"  : "30303",
+      "INSTANCE_NAME"   : "node01",
+      "CONTACT_DETAILS" : "",
+      "WS_SERVER"       : "http://192.168.0.94:3000",
+      "WS_SECRET"       : "test",
+      "VERBOSITY"       : 3
+    }
+  }
+]
+2.3 pm2 start app.json
+2.4 pm2 list
+2.5 pm2 show id
