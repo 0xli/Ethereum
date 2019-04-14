@@ -10,6 +10,10 @@ files:
 ac719cb02cea7821c03bfa6206598759c58628aa6644f6027529c802a1f3b7a8
 639b3aa716abde8573948b9b7a94dad7cab96a90055c10317c1ca61bbad8ffd7
 4978d04cdcdc33c14d514f55855a99d131fc06e784dec87ad07a04260a62c7b9
+[allcom@localhost devnet]$ go-ethereum/build/bin/swarm up node1.sh
+740e5b758cca07820870e4d265b44615c192178e7038be52a67e55107809499a
+[allcom@localhost devnet]$ go-ethereum/build/bin/swarm up swarmpri.sh
+accf54040e60a3e7db2312c4f8021b179f2cef74a06f4bcdb4c6590c8788ca14
 
 HOW TO SETUP
 3. run swarm with geth node
