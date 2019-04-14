@@ -34,6 +34,8 @@ ca87125e2fbb449372db5698c78d38cb51d39f6b7cfe539f9dfcf03a6a691fcc
 [allcom@localhost dropbox]$ swarm up Toku\ Protocol.pdf 
 91d55f0cb2fb78a455e2f7826f26f7cf0e61e22967c82853250d433183162a65
 
+90abfc9dc6e6c23e5fdc20129c58ce975acfa8f348d420ff38d4b2846612718f
+
 HOW TO SETUP
 3. run swarm with geth node
 go-ethereum/build/bin/swarm --ens-api .datadir/geth.ipc --bzzaccount c2b4a394c6ea50721237c9aa2cbd308cac14df40 --datadir .datadir  --httpaddr 0.0.0.0 --ws --wsport 8547 --port 30400 -store.size 100000
