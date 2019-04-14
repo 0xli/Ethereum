@@ -23,6 +23,16 @@ accf54040e60a3e7db2312c4f8021b179f2cef74a06f4bcdb4c6590c8788ca14
 ae53a97d56ed913ac5b619dc9675813d13847105ef38ad6824c8f2d08da3e11b
 
 dc15cc3fbac330d281bd1d915eec3763eb630946461f0604fdddcb286fbc76f6
+[allcom@localhost dropbox]$ swarm up whitepaper_CN.pdf 
+dc15cc3fbac330d281bd1d915eec3763eb630946461f0604fdddcb286fbc76f6
+[allcom@localhost dropbox]$ swarm up the-book-of-satoshi.pdf 
+ca87125e2fbb449372db5698c78d38cb51d39f6b7cfe539f9dfcf03a6a691fcc
+[allcom@localhost dropbox]$ swarm up swarm-guide.pdf 
+0cdebf1b26c23577fd735cc631aed985db59fec07ebeb5b3e31c9069606bad5e
+[allcom@localhost dropbox]$ swarm up paper.pdf 
+94dab498aa1fc432b5fab3d7018326bc466eb9a5685011f8e6b446da3034e3b9
+[allcom@localhost dropbox]$ swarm up Toku\ Protocol.pdf 
+91d55f0cb2fb78a455e2f7826f26f7cf0e61e22967c82853250d433183162a65
 
 HOW TO SETUP
 3. run swarm with geth node
