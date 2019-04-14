@@ -26,3 +26,27 @@ swarm access new pass --password mypass.txt 5d472d299d6be44653334e19529cd31c7ba8
 
 swarm up --encrypt node174.txt
 7cb799031677b08e6da3d5897b9181ef6e227bf776996ea97bc1c3c6834d65448b1e60686ffebadacddfd10d3d73ff19230359a110dbcf09969caf8ea6ec83b0
+
+4. It will take much longer time for swarm to start up when enable -swap-api
+INFO [04-14|14:49:31.664] New local node record                    seq=1 id=05dcaa21ba064128 ip=127.0.0.1 udp=30400 tcp=30400
+INFO [04-14|14:49:31.665] Updated bzz local addr                   oaddr=5ddc27cf01092fbbda4a17d9a120908b6d644660ed1ca6a7fa7aa59e1bdd06bb uaddr=enode://0b213af7513d35e2146c3d414b50c015c39689f48d8a2665585dc7358f39ba06d6a3cce9330542d7881f58d83402f0717ccc348a9192ee49502689ebc6868163@127.0.0.1:30400
+INFO [04-14|14:49:31.670] Started P2P networking                   self=enode://0b213af7513d35e2146c3d414b50c015c39689f48d8a2665585dc7358f39ba06d6a3cce9330542d7881f58d83402f0717ccc348a9192ee49502689ebc6868163@127.0.0.1:30400
+INFO [04-14|14:49:31.671] Deploying new chequebook (owner: 0x5c647227Ab45582da49CaF22D292d9629Ba80b04) 
+INFO [04-14|14:51:23.770] new chequebook deployed at 0xEC13D0F1808377FAf9646e3721e1136573797612 (owner: 0x5c647227Ab45582da49CaF22D292d9629Ba80b04) 
+INFO [04-14|14:51:23.773] auto deposit ON for 0x5c6472 -> 0xEC13D0: interval = 5m0s, threshold = 50000000000000, buffer = 100000000000000) 
+INFO [04-14|14:51:23.773] new chequebook set (0xEC13D0F1808377FAf9646e3721e1136573797612): saving config file, resetting all connections in the hive 
+INFO [04-14|14:51:23.773] Starting bzz service 
+INFO [04-14|14:51:23.773] Starting hive                            baseaddr=5ddc27cf
+INFO [04-14|14:51:23.773] Detected an existing store. trying to load peers 
+INFO [04-14|14:51:23.774] hive 5ddc27cf: no persisted peers found 
+INFO [04-14|14:51:23.774] Swarm network started                    bzzaddr=5ddc27cf01092fbbda4a17d9a120908b6d644660ed1ca6a7fa7aa59e1bdd06bb
+INFO [04-14|14:51:24.173] Started Pss 
+INFO [04-14|14:51:24.174] Loaded EC keys                           pubkey=0x0457d0de854830029bed7c9a62d90a4cfd3628495dc5db4e65d82f41fe01aa719196e24595866121876c016219358d6a1c438a3a7c4bddb0bf6891d66c332b80c7 secp256=0x0357d0de854830029bed7c9a62d90a4cfd3628495dc5db4e65d82f41fe01aa7191
+INFO [04-14|14:51:24.174] Streamer started 
+INFO [04-14|14:51:24.186] IPC endpoint opened                      url=/home/allcom/devnet/node1/bzzd.ipc
+INFO [04-14|14:51:24.190] WebSocket endpoint opened                url=ws://127.0.0.1:8547
+INFO [04-14|14:51:30.663] created ruid for request                 ruid=331419b7 method=GET url=/
+INFO [04-14|14:51:30.664] respondHTML                              ruid=331419b7 code=200
+INFO [04-14|14:51:30.667] request served                           ruid=331419b7 code=200 time=4.327017ms
+INFO [04-14|14:51:31.176] created ruid for request                 ruid=078d6516 method=GET url=/favicon.ico
+INFO [04-14|14:51:31.177] request served                           ruid=078d6516 code=200 time=344.806μs
