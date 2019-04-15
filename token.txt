@@ -7,3 +7,5 @@ https://www.reddit.com/r/raidennetwork/comments/a00lj5/erc865_allows_users_to_pa
 https://espeoblockchain.com/blog/ethereum-gas-price/
 
 0x2dc18ee946db25663ae25160b632b290d2499c17
+0.94:metamask
+0x425F50295630ddED041596e8A584899B3942e961
