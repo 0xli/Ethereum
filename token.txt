@@ -1,3 +1,5 @@
 https://ethereum.stackexchange.com/questions/19006/invoke-contract-from-one-account-and-pay-gas-using-another-account?rq=1
 
 https://github.com/ethereum/EIPs/issues/865
+
+https://espeoblockchain.com/blog/ethereum-gas-price/
