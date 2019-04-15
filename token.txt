@@ -1,5 +1,7 @@
 https://ethereum.stackexchange.com/questions/19006/invoke-contract-from-one-account-and-pay-gas-using-another-account?rq=1
 
 https://github.com/ethereum/EIPs/issues/865
+https://medium.com/coinmonks/erc865-a-case-for-more-user-friendly-tokens-eb68e62a986
+https://www.reddit.com/r/raidennetwork/comments/a00lj5/erc865_allows_users_to_pay_gas_in_erc20_tokens/
 
 https://espeoblockchain.com/blog/ethereum-gas-price/
