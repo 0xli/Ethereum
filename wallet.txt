@@ -1,0 +1,5 @@
+https://medium.freecodecamp.org/how-to-build-an-ethereum-wallet-web-app-ac77dcaac573
+
+https://bitcointalk.org/index.php?topic=2050660.0
+
+https://github.com/manuelsc/Lunary-Ethereum-Wallet
