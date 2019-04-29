@@ -3,3 +3,9 @@ https://hackernoon.com/setup-your-own-private-proof-of-authority-ethereum-networ
 
 clique.propose(addr,true)
 clique.getSigners()
+
+WARN [04-29|20:41:10.966] Header broke chain ancestry              peer=e49e9bd138c9699f number=32555 hash=8706a1…6051c8
+WARN [04-29|20:41:12.861] Synchronisation failed, dropping peer    peer=e49e9bd138c9699f err="retrieved hash chain is invalid"
+WARN [04-29|20:41:20.967] Header broke chain ancestry              peer=e49e9bd138c9699f number=32555 hash=8706a1…6051c8
+WARN [04-29|20:41:22.723] Synchronisation failed, dropping peer    peer=e49e9bd138c9699f err="retrieved hash chain is invalid"
+https://github.com/ethereum/go-ethereum/issues/17849
