@@ -23,3 +23,15 @@ working nodes:
 可能有问题的节点
 192.168.0.94：8501
 
+node1 (8501) recover after miner.stop()
+WARN [04-30|11:35:48.911] Synchronisation failed, dropping peer    peer=e7c58aea1667e660 err="retrieved hash chain is invalid"
+WARN [04-30|11:36:28.937] Synchronisation failed, dropping peer    peer=e7c58aea1667e660 err="retrieved hash chain is invalid"
+INFO [04-30|11:37:02.046] Imported new chain segment               blocks=31 txs=0 mgas=0.000 elapsed=3.066s    mgasps=0.000 number=103807 hash=929ec0…bca8eb age=1m18s  cache=0.00B
+WARN [04-30|11:37:02.317] Synchronisation failed, retrying         err="block body download canceled (requested)"
+INFO [04-30|11:37:02.777] Upgrading chain index                    type=cht percentage=72
+INFO [04-30|11:37:02.812] Upgrading chain index                    type=bloombits percentage=72
+INFO [04-30|11:37:05.411] Finished upgrading chain index           type=bloombits
+INFO [04-30|11:37:05.815] Storing CHT                              section=2 head=efd030505ce07d6e6c53f394a735ea38099041df085806de8cb928fc3c4b49cd root=60e787adfbe580ba51eba3365ea51789e6721f80ab5ed2899f943ad146f1c8e8
+INFO [04-30|11:37:06.344] Finished upgrading chain index           type=cht
+INFO [04-30|11:39:19.709] Imported new chain segment               blocks=10 txs=0 mgas=0.000 elapsed=31.103ms  mgasps=0.000 number=103817 hash=1e1c18…924e43 cache=0.00B ignored=1
+INFO [04-30|11:40:20.065] Imported new chain segment               blocks=2  txs=0 mgas=0.000 elapsed=5.875ms   mgasps=0.000 number=103819 hash=94191c…96faeb cache=0.00B ignored=1
