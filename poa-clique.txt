@@ -15,3 +15,11 @@ https://github.com/ethereum/go-ethereum/issues/17849
 2. 在局域网内生成一个新的节点： geth --datadir node3 init gensys.json
 3. 把signer的keystore复制到新节点下
 4. 如果新节点(node3)与已同步的节点(node2)在同一机器(出现错误的为node1)，可以用copydb复制chaindata: geth --datadir node3 copydb node2
+
+working nodes:
+192.168.0.94：8502
+192.168.0.94：8503
+192.168.0.173：8502
+可能有问题的节点
+192.168.0.94：8501
+
