@@ -52,3 +52,5 @@ stop node2 and create a new node4 with the signer of node2
 Experience:
 1. Signer should not provide RPC for dapp access
 2. Signer should not provide a lightserv
+
+Finnally got nodes sync cross diefferent LANs as fast as light, the key is to make sure no error on any signer node . 05-01-02
