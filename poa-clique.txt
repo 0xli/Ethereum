@@ -37,7 +37,8 @@ INFO [04-30|11:39:19.709] Imported new chain segment               blocks=10 txs
 INFO [04-30|11:40:20.065] Imported new chain segment               blocks=2  txs=0 mgas=0.000 elapsed=5.875ms   mgasps=0.000 number=103819 hash=94191c…96faeb cache=0.00B ignored=1
 
 2018-04-30 node2 broken because of dapp development use it as a node but keystore file is not on node2
-04-30 晚到05-01下午 停止同步，原因是node2受应用的影响无法正常工作，解决是重新创建新的可以签名的节点（详细办法如下），经验教训是签名节点的工作要单纯，不能用于支持dapp的节点也不要为light节点提供服务lightserv=0;Dapp只需挂在light无签名权力的节点上即可。
+04-30 晚到05-01下午 停止同步，原因是node2受应用的影响无法正常工作，解决是重新创建新的可以签名的节点（复制签名节点的keystore），
+经验教训是签名节点的工作要单纯，不能用于支持dapp的节点也不要为light节点提供服务lightserv=0;Dapp只需挂在light无签名权力的节点上即可。
 WARN [05-01|14:56:44.991] Failed transaction send attempt          from=0x2dc18eE946dB25663aE25160b632B290d2499c17 to=0x093A0Ed738B65ed34f2A37a2D44c5e3Cd0D0DD45 value=4985118219999974925    err="could not decrypt key with given passphrase"
 WARN [05-01|14:56:45.009] Failed transaction send attempt          from=0xE64b3A41601F3731B223be1d1235559c823A27fb to=0x093A0Ed738B65ed34f2A37a2D44c5e3Cd0D0DD45 value=1038382975791001548534 err="could not decrypt key with given passphrase"
 how to fix:
