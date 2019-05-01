@@ -54,3 +54,4 @@ Experience:
 2. Signer should not provide a lightserv
 
 Finnally got nodes sync cross diefferent LANs as fast as light, the key is to make sure no error on any signer node . 05-01-02
+Tested use metamask to transfer ETH and FAX .
