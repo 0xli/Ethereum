@@ -9,3 +9,6 @@ https://espeoblockchain.com/blog/ethereum-gas-price/
 0x2dc18ee946db25663ae25160b632b290d2499c17
 0.94:metamask
 0x425F50295630ddED041596e8A584899B3942e961
+
+FAX token contract
+0x9a19c1a774a55eb1429b1c3eb975b3dd2bd7b812
