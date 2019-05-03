@@ -1,0 +1,11 @@
+# 1. 2019-05-02 23:00 NOT SYNC
+# 1.1 node4 @ 192.168.0.94 exit for unkown reason.
+INFO [05-02|23:07:35.005] Signed recently, must wait for others 
+INFO [05-02|23:07:40.010] Imported new chain segment               blocks=1   txs=0 mgas=0.000 elapsed=537.231µs mgasps=0.000 number=121597 hash=a56dfc…12e59d cache=7.50kB
+INFO [05-02|23:07:40.011] 🔗 block reached canonical chain          number=121590 hash=56c1e2…921d57
+INFO [05-02|23:07:40.011] Commit new mining work                   number=121598 sealhash=14a533…5108b4 uncles=2 txs=0 gas=0     fees=0           elapsed=366.938µs
+./node4.sh: line 1: 26624 Killed                  geth --datadir node4/ --syncmode 'full' --port 30314 --rpc --rpcaddr '0.0.0.0' --rpcport 8504 --rpcapi 'personal,db,eth,net,web3,txpool,miner' --bootnodes 'enode://9a9248af3a8fc5ebf8a0b6beda4cfec60c3cb3d201c42ba9bc8cb82835545c357902d2f983655b35febd49554f29af2116863c6f47d5b92360e7cff4a05c2f4b@47.252.16.104:30303,enode://05eb5de394d1f88139f93df265b27c3267552be63bc85e5b0bab2ccf298b917d3bfd1db72ace7bf31a1b1317620b14f5d994255a48a022309a913ce344e333a7@47.252.16.104:30301,enode://05eb5de394d1f88139f93df265b27c3267552be63bc85e5b0bab2ccf298b917d3bfd1db72ace7bf31a1b1317620b14f5d994255a48a022309a913ce344e333a7@192.168.0.94:30310' --networkid 1515 --gasprice '1' -unlock '0xc1c9e49cd2d7cb1dd204739ecd6ab81f1ff7f281' --password password.txt --mine --lightserv 50 --rpccorsdomain "*" console
+# 1.2 fixed by removedb and sync again
+geth --datadir node4 removedb
+geth --datadir node4 init devnet.json
+
