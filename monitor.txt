@@ -1,6 +1,9 @@
 https://medium.com/@jake.henningsgaard/monitoring-the-ethereum-blockchain-24384064fad3
 
-
+0. Prepare: install nodejs
+ curl --silent --location https://rpm.nodesource.com/setup_10.x | sudo bash -
+ sudo yum install -y nodejs
+ 
 1. install front end
 1.1 install
 git clone https://github.com/cubedro/eth-netstats.git
