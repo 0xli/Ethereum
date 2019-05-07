@@ -45,3 +45,4 @@ npm install pm2 -g
 2.3 pm2 start app.json
 2.4 pm2 list
 2.5 pm2 show id
+2.6 other usefull commands: pm2 del all , pm2 log
