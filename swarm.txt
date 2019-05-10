@@ -1,4 +1,5 @@
 HOW TO USE?
+https://swarm-guide.readthedocs.io/en/latest/introduction.html
 https://swarm-guide.readthedocs.io/en/latest/usage.html
 https://swarm-gateways.net/bzz:/theswarm.eth/
 
