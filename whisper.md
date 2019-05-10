@@ -1,3 +1,5 @@
+https://github.com/ethereum/wiki/wiki/Whisper
+
 https://ethereum.stackexchange.com/questions/24338/looking-for-a-working-whisper-example
 https://ethereum.stackexchange.com/questions/51604/whisper-protocol-how-to-decode-the-received-message-on-the-receiver-node/51605#51605
 
