@@ -1,5 +1,6 @@
 HOW TO USE?
 https://swarm-guide.readthedocs.io/en/latest/usage.html
+https://swarm-gateways.net/bzz:/theswarm.eth/
 
 1. upload file
 curl -H "Content-Type:image/jpeg" --data-binary @cat.jpg http://192.168.0.178:8500/bzz:/
