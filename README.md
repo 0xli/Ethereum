@@ -3,6 +3,9 @@ All about ethereum regarding DAPP development
 https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum
 Windows:
  go get -u -v golang.org/x/net/context
+# Books
+https://github.com/ethereumbook/ethereumbook
+
 # Download
  https://geth.ethereum.org/downloads/
  need genisys file devnet.json and static-nodes.json
