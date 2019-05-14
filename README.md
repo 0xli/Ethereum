@@ -2,7 +2,17 @@
 All about ethereum regarding DAPP development
 https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum
 Windows:
+ https://github.com/ethereum/go-ethereum/wiki/Installation-instructions-for-Windows
  go get -u -v golang.org/x/net/context
+ # if failed, do this first:
+ $mkdir -p $GOPATH/src/golang.org/x/
+ $cd $GOPATH/src/golang.org/x/ 
+ $git clone https://github.com/golang/net.git net 
+ $go install net
+https://www.cnblogs.com/weifeng1463/p/7488862.html
+
+ go install -v ./cmd/...
+ 
 # Books
 https://github.com/ethereumbook/ethereumbook
 
