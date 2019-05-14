@@ -91,3 +91,6 @@ add password access using new pass
 e0a90347726a5f9db4569e5e3682b9eb47c74e567e3837779ea78c3abb63d213
 decryption request domain forbidden - can only decrypt on localhost
 Error code: 404
+
+5. console of swarm on Windows
+geth attach \\.\pipe\bzzd.ipc
