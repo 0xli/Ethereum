@@ -1,3 +1,6 @@
+#ENS on private chain
+https://docs.ens.domains/deploying-ens-on-a-private-chain
+
 Develop and run on geth console is different:
 1. For development
 https://medium.com/the-ethereum-name-service/adding-ens-into-your-dapp-72eb6deac26b
