@@ -1,3 +1,6 @@
+#About ENS
+https://ethfans.org/topics/889
+
 #ENS on private chain
 https://docs.ens.domains/deploying-ens-on-a-private-chain
 
