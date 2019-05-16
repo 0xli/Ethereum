@@ -94,3 +94,9 @@ Error code: 404
 
 5. console of swarm on Windows
 geth attach \\.\pipe\bzzd.ipc
+
+6. swarm scripts
+[root@localhost devnet]# swarm up swarmpeers.sh 
+288fa029948d7cb3684e29c6e8f8396be2c17a19b1aa38467d680db6e4893eeb
+[root@localhost devnet]# swarm up swarmnohup.sh 
+3b60578de1fb8507f5c8540e38d0884bab86013d637b4690543cd50d33a17c75
