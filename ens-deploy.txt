@@ -89,3 +89,20 @@ Summary
 > Total deployments:   1
 > Final cost:          0.00569816 ETH
 
+低版本的
+npm install truffle@4.1.14 -g
+
+liweideMacBook-Pro:ens liwei$ truffle migrate --network dev.fifs
+Using network 'dev.fifs'.
+
+Running migration: 2_deploy_contracts.js
+  Deploying ENSRegistry...
+  ... 0x59c16c053f4f4587cb34d6a6002c043b481c3c46fb1e5f0c8ccad0eba81f4987
+  ENSRegistry: 0x22fb31e04f0d93d261a87f808d2f80d52c241fc7
+  Deploying FIFSRegistrar...
+  ... 0x9ca461ddb3adb81bfd6a9348c5ffae544ace63efce4031f9386e326e5157af4c
+  FIFSRegistrar: 0xbf0444a80b739991be4390ce385cbeb83a41cf9a
+Saving successful migration to network...
+  ... 0x7eec299022e037044c89c82c19e8a381a3c036b6a64275555af93385af173ae7
+  ... 0x9f730a165d3472e5bc8f632a1830fef367be831b4ca121677a64599b257d365d
+Saving artifacts...
