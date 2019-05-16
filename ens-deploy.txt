@@ -1,0 +1,54 @@
+[liwei@osdnode94 ens]$ truffle migrate --network allcom
+Warning: Both truffle-config.js and truffle.js were found. Using truffle-config.js.
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+Warning: Both truffle-config.js and truffle.js were found. Using truffle-config.js.
+Warning: Both truffle-config.js and truffle.js were found. Using truffle-config.js.
+
+Starting migrations...
+======================
+> Network name:    'allcom'
+> Network id:      1515
+> Block gas limit: 0x7a1200
+git clone https://github.com/ensdomains/ens.git
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0xf2c949aef45134f423a951438d302f99797bc0c09a04ad1705b1c3239ef6e61a
+   > Blocks: 0            Seconds: 4
+   > contract address:    0x4459A84591Aa129eA37C14450B07B5C081181C35
+   > block number:        353196
+   > block timestamp:     1558006015
+   > account:             0xFf9D40c2d790B1737729CD3a4b58C08aEad2E7e1
+   > balance:             4.993801839998639555
+   > gas used:            284908
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00569816 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00569816 ETH
+
+
+2_deploy_contracts.js
+=====================
+
+   > Saving migration to chain.
+   -------------------------------------
+   > Total cost:                   0 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.00569816 ETH
+
