@@ -101,6 +101,20 @@ Summary
 > Total deployments:   1
 > Final cost:          0.00569816 ETH
 
+# Deploy resolver
+var PublicResolver = artifacts.require("./PublicResolver.sol");
+
+  const ensaddress = '0xed055F160D056EB858A4e510C31B9328475dc205';
+async function deployResolver(deployer){
+  const publicResolver = await PublicResolver.new(ensaddress);
+}
+module.exports = function(deployer) {
+//  deployer.deploy(Migrations);
+  deployer.deploy(PublicResolver,ensaddress);
+  deployResolver(deployer);
+};
+
+
    Deploying 'PublicResolver'
    --------------------------
    > transaction hash:    0x3c55a2b1b2225fd609604c1c6f2ff9c374c64dc8adbca9b157574d56aa0bf277
