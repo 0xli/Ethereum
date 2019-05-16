@@ -90,6 +90,7 @@ Summary
 > Final cost:          0.00569816 ETH
 
 低版本的
+cd node_modules/@ensdomains/ens
 npm install truffle@4.1.14 -g
 
 liweideMacBook-Pro:ens liwei$ truffle migrate --network dev.fifs
