@@ -1,3 +1,13 @@
+https://github.com/ensdomains/ens
+Deploy ENS and FIFSRegistrar to the private network, the deployment process is defined at here:
+
+$ truffle migrate --network dev.fifs
+
+alternatively, deploy the HashRegistrar:
+
+$ truffle migrate --network dev.auction
+
+
 git clone https://github.com/ensdomains/ens.git
 
 
@@ -93,6 +103,7 @@ Summary
 cd node_modules/@ensdomains/ens
 npm install truffle@4.1.14 -g
 
+ens@0.1.1
 liweideMacBook-Pro:ens liwei$ truffle migrate --network dev.fifs
 Using network 'dev.fifs'.
 
@@ -107,3 +118,5 @@ Saving successful migration to network...
   ... 0x7eec299022e037044c89c82c19e8a381a3c036b6a64275555af93385af173ae7
   ... 0x9f730a165d3472e5bc8f632a1830fef367be831b4ca121677a64599b257d365d
 Saving artifacts...
+
+ens@0.2.2
