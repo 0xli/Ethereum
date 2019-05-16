@@ -115,15 +115,32 @@ module.exports = function(deployer) {
 };
 
 
-   Deploying 'PublicResolver'
+  [liwei@osdnode94 resolvers]$ truffle migrate --network local --reset
+
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+Starting migrations...
+======================
+> Network name:    'local'
+> Network id:      1515
+> Block gas limit: 0x7a1200
+
+
+1_initial_migration.js
+======================
+
+   Replacing 'PublicResolver'
    --------------------------
-   > transaction hash:    0x3c55a2b1b2225fd609604c1c6f2ff9c374c64dc8adbca9b157574d56aa0bf277
+   > transaction hash:    0x6ae5b639ec04715668ffb43db5d99e44ad1837935c63dd383d375b6c598edf8b
    > Blocks: 1            Seconds: 4
-   > contract address:    0x88F6b6d04752DACb62a0f12DE42e5Ee8b32dfb03
-   > block number:        354878
-   > block timestamp:     1558014425
+   > contract address:    0x0Fa28CeE73dCBcBD436B6F2FA5056c2D1A98f756
+   > block number:        354942
+   > block timestamp:     1558014745
    > account:             0xFf9D40c2d790B1737729CD3a4b58C08aEad2E7e1
-   > balance:             4.862311039998639555
+   > balance:             4.765954559998639555
    > gas used:            2408912
    > gas price:           20 gwei
    > value sent:          0 ETH
@@ -132,6 +149,13 @@ module.exports = function(deployer) {
    > Saving artifacts
    -------------------------------------
    > Total cost:          0.04817824 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.04817824 ETH
+
 
 
 Summary
