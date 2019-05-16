@@ -1,4 +1,7 @@
-[liwei@osdnode94 ens]$ truffle migrate --network allcom
+git clone https://github.com/ensdomains/ens.git
+
+
+[liwei@osdnode94 ens]$ truffle migrate --network dev.fifs --reset
 Warning: Both truffle-config.js and truffle.js were found. Using truffle-config.js.
 
 Compiling your contracts...
@@ -6,27 +9,26 @@ Compiling your contracts...
 > Everything is up to date, there is nothing to compile.
 
 Warning: Both truffle-config.js and truffle.js were found. Using truffle-config.js.
-Warning: Both truffle-config.js and truffle.js were found. Using truffle-config.js.
 
 Starting migrations...
 ======================
-> Network name:    'allcom'
+> Network name:    'dev.fifs'
 > Network id:      1515
 > Block gas limit: 0x7a1200
-git clone https://github.com/ensdomains/ens.git
+
 
 1_initial_migration.js
 ======================
 
-   Deploying 'Migrations'
+   Replacing 'Migrations'
    ----------------------
-   > transaction hash:    0xf2c949aef45134f423a951438d302f99797bc0c09a04ad1705b1c3239ef6e61a
-   > Blocks: 0            Seconds: 4
-   > contract address:    0x4459A84591Aa129eA37C14450B07B5C081181C35
-   > block number:        353196
-   > block timestamp:     1558006015
+   > transaction hash:    0x121960b2b7ac2e91feea4843e331debca0bf73f1e8ba291107af1a34cfa93120
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x390539769D6AF32382dfCC1f6Dac93e30305C672
+   > block number:        353290
+   > block timestamp:     1558006485
    > account:             0xFf9D40c2d790B1737729CD3a4b58C08aEad2E7e1
-   > balance:             4.993801839998639555
+   > balance:             4.986722319998639555
    > gas used:            284908
    > gas price:           20 gwei
    > value sent:          0 ETH
@@ -42,12 +44,47 @@ git clone https://github.com/ensdomains/ens.git
 2_deploy_contracts.js
 =====================
 
+   Deploying 'ENSRegistry'
+   -----------------------
+   > transaction hash:    0x90844e20b52b84a0079358970c96e2f9ddfbff5989e674d5c0b6bff17fceb86d
+   > Blocks: 1            Seconds: 4
+   > contract address:    0xed055F160D056EB858A4e510C31B9328475dc205
+   > block number:        353292
+   > block timestamp:     1558006495
+   > account:             0xFf9D40c2d790B1737729CD3a4b58C08aEad2E7e1
+   > balance:             4.972209019998639555
+   > gas used:            683631
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01367262 ETH
+
+
+   Deploying 'FIFSRegistrar'
+   -------------------------
+   > transaction hash:    0x3c0e7bb80c068b45749479be773aa371ec290ea9a443d19042dd59a35f2b5aa8
+   > Blocks: 0            Seconds: 4
+   > contract address:    0x99dEb8530B419d62c3fcF1bD5eF691C8c96bC5FF
+   > block number:        353293
+   > block timestamp:     1558006500
+   > account:             0xFf9D40c2d790B1737729CD3a4b58C08aEad2E7e1
+   > balance:             4.965866999998639555
+   > gas used:            317101
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00634202 ETH
+
+
    > Saving migration to chain.
+   > Saving artifacts
    -------------------------------------
-   > Total cost:                   0 ETH
+   > Total cost:          0.02001464 ETH
 
 
 Summary
+=======
+> Total deployments:   3
+> Final cost:          0.0257128 ETH
+
 =======
 > Total deployments:   1
 > Final cost:          0.00569816 ETH
