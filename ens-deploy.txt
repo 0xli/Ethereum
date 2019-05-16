@@ -101,6 +101,30 @@ Summary
 > Total deployments:   1
 > Final cost:          0.00569816 ETH
 
+   Deploying 'PublicResolver'
+   --------------------------
+   > transaction hash:    0x3c55a2b1b2225fd609604c1c6f2ff9c374c64dc8adbca9b157574d56aa0bf277
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x88F6b6d04752DACb62a0f12DE42e5Ee8b32dfb03
+   > block number:        354878
+   > block timestamp:     1558014425
+   > account:             0xFf9D40c2d790B1737729CD3a4b58C08aEad2E7e1
+   > balance:             4.862311039998639555
+   > gas used:            2408912
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.04817824 ETH
+
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.04817824 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.04817824 ETH
+
 低版本的
 cd node_modules/@ensdomains/ens
 npm install truffle@4.1.14 -g
