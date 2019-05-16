@@ -1,4 +1,6 @@
 https://github.com/ensdomains/ens
+https://github.com/ensdomains/resolvers
+
 Deploy ENS and FIFSRegistrar to the private network, the deployment process is defined at here:
 
 $ truffle migrate --network dev.fifs
