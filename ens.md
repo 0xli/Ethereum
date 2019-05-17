@@ -3,6 +3,21 @@ https://ethfans.org/topics/889
 
 #ENS on private chain
 https://docs.ens.domains/deploying-ens-on-a-private-chain
+our private chain ENS related address:
+ENSRegistry:    0xed055F160D056EB858A4e510C31B9328475dc205
+FIFSRegistrar:  0x99dEb8530B419d62c3fcF1bD5eF691C8c96bC5FF
+PublicResolver: 0x0Fa28CeE73dCBcBD436B6F2FA5056c2D1A98f756
+.eth using FIFSRegistrar
+
+The following are the official ENS registry deployments:
+Mainnet, at 0x314159265dd8dbb310642f98f50c066173c1259b.
+Ropsten, at 0x112234455c3a32fd11230c42e7bccd4a84e02010.
+Rinkeby, at 0xe7410170f87102df0055eb195163a03b7f2bff4a.
+Goerli, at 0x112234455c3a32fd11230c42e7bccd4a84e02010.
+On mainnet, the following registrars are deployed:
+.eth, using the auction registrar.
+.xyz, via DNS integration
+.luxe, via a custom integration that allows any owner of a .luxe DNS name to use ENS.
 
 Develop and run on geth console is different:
 1. For development
