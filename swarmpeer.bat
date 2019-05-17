@@ -1,0 +1,3 @@
+geth --exec "admin.addPeer('enode://d984ea32705bd12828cb23b7500d6cd2abc6f88d32fd8d6c3db6949a277b253dd9a8419707dcbc9505d81d6dd9ab2337f2ac939a4990ae7eb537095cd9531283@192.168.0.173:30400')" attach \\.\pipe\bzzd.ipc
+geth --exec "admin.addPeer('enode://6365092059c9a7554055108c2fd1f9d3478013933452d14046ffb7563f69e79f04d0883611fd4135a53f77edb97ee08816c3cfa2d6ff497625ad9d376e87caed@114.84.174.231:30400')" attach  \\.\pipe\bzzd.ipc
+geth --exec "admin.addPeer('enode://a3ca77fe20b63acee17fddcd90a11d29f9cbc059b83fd9bda3e95735578f0d36b1e0aad9927532ef899854259aa0bb55ecbbb524820fe0ab448524684b314a12@114.84.174.231:30474')" attach  \\.\pipe\bzzd.ipc
