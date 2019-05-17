@@ -72,6 +72,35 @@ Starting migrations...
 
 
    Deploying 'FIFSRegistrar'
+  var tld = 'eth';
+
+  if (network === 'dev.fifs') {
+    deployFIFSRegistrar(deployer, tld);
+    }
+    TLD is 'eth'
+    if define a new top level domain, for example '.com',you should do 
+      deployFIFSRegistrar(deployer, 'com');
+/**
+ * Deploy the ENS and FIFSRegistrar
+ *
+ * @param {Object} deployer truffle deployer helper
+ * @param {string} tld tld which the FIFS registrar takes charge of
+ */
+function deployFIFSRegistrar(deployer, tld) {
+  var rootNode = getRootNodeFromTLD(tld);
+
+  // Deploy the ENS first
+  deployer.deploy(ENS)
+    .then(() => {
+      // Deploy the FIFSRegistrar and bind it with ENS
+      return deployer.deploy(FIFSRegistrar, ENS.address, rootNode.namehash);
+    })
+    .then(function() {
+      // Transfer the owner of the `rootNode` to the FIFSRegistrar
+      return ENS.at(ENS.address).then((c) => c.setSubnodeOwner('0x0', rootNode.sha3, FIFSRegistrar.address));
+    });
+}
+      
    -------------------------
    > transaction hash:    0x3c0e7bb80c068b45749479be773aa371ec290ea9a443d19042dd59a35f2b5aa8
    > Blocks: 0            Seconds: 4
