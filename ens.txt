@@ -5,9 +5,46 @@ https://ethfans.org/topics/889
 https://docs.ens.domains/deploying-ens-on-a-private-chain
 our private chain ENS related address:
 ENSRegistry:    0xed055F160D056EB858A4e510C31B9328475dc205
-FIFSRegistrar:  0x99dEb8530B419d62c3fcF1bD5eF691C8c96bC5FF
+FIFSRegistrar:  
+.eth: 0x99dEb8530B419d62c3fcF1bD5eF691C8c96bC5FF
+.fax: 0x75Fd01DC3b4460173F47cBE063e560556148A28A
 PublicResolver: 0x0Fa28CeE73dCBcBD436B6F2FA5056c2D1A98f756
 .eth using FIFSRegistrar
+var ethRegistrar = fifsRegistrarContract.at(ens.owner(namehash('eth')));
+var faxRegistrar = fifsRegistrarContract.at(ens.owner(namehash('fax')));
+
+add .fax
+function deployFIFSRegistrarOnly(deployer, tld) {
+  var rootNode = getRootNodeFromTLD(tld);
+  var ensaddress='0xed055F160D056EB858A4e510C31B9328475dc205';
+      // Deploy the FIFSRegistrar and bind it with ENS
+      deployer.deploy(FIFSRegistrar, ensaddress, rootNode.namehash)
+    .then(function() {
+      // Transfer the owner of the `rootNode` to the FIFSRegistrar
+      return ENS.at(ensaddress).then((c) => c.setSubnodeOwner('0x0', rootNode.sha3, FIFSRegistrar.address));
+    });
+}
+
+   Replacing 'FIFSRegistrar'
+   -------------------------
+   > transaction hash:    0x5acbe6eb3d1729af9361ea5feee5a5810e1f760d3037091aebc3f80486e918fd
+   > Blocks: 1            Seconds: 4
+   > contract address:    0x75Fd01DC3b4460173F47cBE063e560556148A28A
+   > block number:        368136
+   > block timestamp:     1558080715
+   > account:             0xFf9D40c2d790B1737729CD3a4b58C08aEad2E7e1
+   > balance:             14.714431319998639555
+   > gas used:            317101
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00634202 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00634202 ETH
+
 
 The following are the official ENS registry deployments:
 Mainnet, at 0x314159265dd8dbb310642f98f50c066173c1259b.
