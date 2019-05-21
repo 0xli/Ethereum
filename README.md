@@ -1,7 +1,12 @@
 # Ethereum
 All about ethereum regarding DAPP development
 https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum
-Windows:
+
+#Centos
+https://golang.org/dl/
+modify ~/.bash_profile add go/bin to PATH
+
+#Windows:
  https://github.com/ethereum/go-ethereum/wiki/Installation-instructions-for-Windows
  go get -u -v golang.org/x/net/context
  # if failed, do this first:
