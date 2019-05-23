@@ -2,6 +2,8 @@ enode://156590cbd47139cdf5c8c99a93d8046fed590357cb5d66e13061bef707e192f08e38e117
 
 1. Install ethereum on centos
 1.1 go
+yum install golang 
+#OR
 [root@localhost blockchain]# wget https://dl.google.com/go/go1.12.1.linux-amd64.tar.gz
 modify ~/.bash_profile add go/bin to PATH
 1.2 
