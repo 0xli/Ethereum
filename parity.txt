@@ -1,7 +1,10 @@
 https://github.com/paritytech/parity-ethereum
 prepare:
-1. udev
+1. udev, cmake
 yum install systemd-devel
+yum install -y cmake3
+ln /usr/bin/cmake3 /usr/bin/cmake
+
 2. $ curl https://sh.rustup.rs -sSf | sh
 # download Parity Ethereum code
 $ git clone https://github.com/paritytech/parity-ethereum
