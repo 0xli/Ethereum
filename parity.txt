@@ -1,0 +1,11 @@
+https://github.com/paritytech/parity-ethereum
+prepare:
+1. udev
+yum install systemd-devel
+2. $ curl https://sh.rustup.rs -sSf | sh
+# download Parity Ethereum code
+$ git clone https://github.com/paritytech/parity-ethereum
+$ cd parity-ethereum
+
+# build in release mode
+$ cargo build --release --features final
