@@ -1,7 +1,19 @@
 https://forum.poa.network/t/manual-blockscout-deployment/2458
-
+#knowledge elixir
+https://elixir-lang.org/getting-started/introduction.html
+http://blog.jobbole.com/106663/
+https://www.oschina.net/translate/a-week-with-elixir
+https://elixirschool.com/zh-hans/lessons/advanced/erlang/
+https://ruby-china.org/topics/37718
+https://www.zhihu.com/question/58447086
 #prepare
 1. postgresql
+https://www.cnblogs.com/terrysun/archive/2012/11/30/2796479.html
+https://help.ubuntu.com/stable/serverguide/postgresql.html
+https://blog.csdn.net/XuHang666/article/details/81506297
+https://www.postgresql.org/download/linux/redhat/
+https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html
+
 2. node
 can nopt install node-sass by default
 npm install node-sass -- save --unsafe-perm=true
