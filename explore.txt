@@ -20,5 +20,9 @@ https://www.postgresql.org/download/linux/redhat/
 https://www3.ntu.edu.sg/home/ehchua/programming/sql/PostgreSQL_GetStarted.html
 
 2. node
+2.1
+curl -sL https://rpm.nodesource.com/setup_10.x | bash -
+2.2
 can nopt install node-sass by default
 npm install node-sass -- save --unsafe-perm=true
+
