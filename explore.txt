@@ -12,6 +12,7 @@ https://www.zhihu.com/question/58447086
 1. postgresql
 yum install postgresql10-contrib
 
+http://www.ruanyifeng.com/blog/2013/12/getting_started_with_postgresql.html
 https://www.cnblogs.com/terrysun/archive/2012/11/30/2796479.html
 https://help.ubuntu.com/stable/serverguide/postgresql.html
 https://blog.csdn.net/XuHang666/article/details/81506297
