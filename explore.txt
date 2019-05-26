@@ -1,0 +1,7 @@
+https://forum.poa.network/t/manual-blockscout-deployment/2458
+
+#prepare
+1. postgresql
+2. node
+can nopt install node-sass by default
+npm install node-sass -- save --unsafe-perm=true
