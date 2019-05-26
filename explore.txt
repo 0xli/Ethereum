@@ -1,3 +1,5 @@
+https://github.com/poanetwork/blockscout#getting-started
+https://forum.poa.network/c/blockscout
 https://forum.poa.network/t/manual-blockscout-deployment/2458
 #knowledge elixir
 https://elixir-lang.org/getting-started/introduction.html
