@@ -11,6 +11,7 @@ https://www.zhihu.com/question/58447086
 #prepare
 1. postgresql
 yum install postgresql10-contrib
+service postgresql-9.4 stop 
 
 http://www.ruanyifeng.com/blog/2013/12/getting_started_with_postgresql.html
 https://www.cnblogs.com/terrysun/archive/2012/11/30/2796479.html
