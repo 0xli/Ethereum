@@ -11,6 +11,8 @@ npm install
 sudo npm install -g grunt-cli
 grunt
 1.2 WS_SECRET=test npm start
+#run in background by pm2
+WS_SECRET=test pm2 start npm -- start
 http://192.168.0.94:3000/
 2. install on every node to be monitored
 2.1 prepare:
