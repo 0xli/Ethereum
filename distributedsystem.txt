@@ -1,0 +1,7 @@
+1. Some times only one node should be selected to do something, such as send push notification to mobile app, among a group of distributed nodes.
+2. The ways:
+2.1 We need something like POW of DPOS to choose one , 
+2.2 do it in turn like EOS super nodes,
+2.3 or let the nodes to compete to get the semaphore of the critical section，
+https://github.com/dyc87112/consul-distributed-lock
+https://learn.hashicorp.com/consul/developer-configuration/semaphore
