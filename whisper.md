@@ -12,3 +12,8 @@ web3.shh.newMessageFilter({privateKeyID:kId},function(err,res){console.log('noti
 var kIdPub = web3.shh.getPublicKey(kId)
 4. send message
 web3.shh.post({pubKey:kIdPub,ttl:7,topic:'0x07678231',powTarget:2.01,powTime:2,payload:web3.fromAscii("Hello there!There")})
+
+#mailserver
+https://github.com/orbitdb/orbit-db
+https://medium.com/originprotocol/introducing-origin-messaging-decentralized-secure-and-auditable-13c16fe0f13e
+https://discuss.status.im/t/rethinking-mail-servers/390
