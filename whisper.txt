@@ -17,6 +17,30 @@ web3.shh.post({pubKey:kIdPub,ttl:7,topic:'0x07678231',powTarget:2.01,powTime:2,p
 https://github.com/ethereum/go-ethereum/wiki/Diagnostic-Tool-wnode
 https://geth.ethereum.org/whisper/Diagnostic-Tool-wnode
 https://ethereum.stackexchange.com/questions/66294/how-to-enable-mail-server-mailserver-when-starting-a-whisper-node-by-using-ge
+##mailserver server
+$wnode -test -boot=enode://c8385f5c78ab5d61d1603493a66ffb09221df5072d6ea70e8fb3260ae69a338c0ae7fad31d1d60e1c60fb8669faab7e74c30e8f83e9a8316a8d8b6f937490d7c@192.168.0.206:30303 -standalone -mailserver -forwarder -ip=127.0.0.1:30381 -dbpath=node4
+my public key: 0x0491eafe0b08d6294a7ad3f5381b5be21c4aa8392d4a10fd7f3d6d5607f9fe211b04a98014bc28332d3ad0336d2269114085f0b1e6359fd93edd36db30b36e07a9 
+enode://06a3563163e4a11e936ade1a111169a997b02ebee7befc5820dde910b8bd528106fe3eebf391a2c91bb0752ebfd56f3ba24e14a6b8b7e66704241eb06584cf77@127.0.0.1:30381
+Bootstrap Whisper node started
+##test sender
+wnode -test -boot=enode://06a3563163e4a11e936ade1a111169a997b02ebee7befc5820dde910b8bd528106fe3eebf391a2c91bb0752ebfd56f3ba24e14a6b8b7e66704241eb06584cf77@127.0.0.1:30381
+my public key: 0x043a860ba30d14cc84eec8b6c70d81ae8c03c7aacd1a592d7bccd3b50df80ebde8351296e1e63b942bf71443ef4e7a8a24d001dca2cb7916e63298d28c40988291 
+enode://852228be764dec135c2e41cdf89bf622d7556f9d57897760423686c3cb9e76ab5c60f445f14ce6e8284475bd4317ee358bf24de1e8862a4c77478208ed079fc9@127.0.0.1:0?discport=48387
+Whisper node started
+Connected to peer.
+Filter is configured for the topic: 5a4ea131 
+Please type the message. To quit type: '~Q'
+##mailserver client
+wnode -mailclient -test -boot=enode://06a3563163e4a11e936ade1a111169a997b02ebee7befc5820dde910b8bd528106fe3eebf391a2c91bb0752ebfd56f3ba24e14a6b8b7e66704241eb06584cf77@127.0.0.1:30381
+my public key: 0x04c87e17561198de64a37730e780d96f8be8dc4742de546e5efdb0aea5ec2258fa8d7cc5d544d7928e6e547a0e9f7759cea8c02f752ce973c4e67fb768fa2fea18 
+enode://b74b3f614187d0dd2dcc366a006e3771d223264a3fcb9acd49a210b1ee6a23080bf848765c5f2a5df0e31ee20d217dba193bbce8b82f9551228921e42c95a38b@127.0.0.1:0?discport=44801
+Whisper node started
+Connected to peer.
+Filter is configured for the topic: 5a4ea131 
+Please type the message. To quit type: '~Q'
+
+1561618187 [8bc66d2330230fa8849035ee3d3d5038fecd97b1]: dfsfsfs
+
 
 #other solutions
 https://github.com/orbitdb/orbit-db
