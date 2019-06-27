@@ -1,3 +1,10 @@
+#requirement of messaging
+1. broadcasting
+2. offline messaging
+3. online peer to peer messaging
+Whisper support the 1 &2; 3 should be done using other way, perhaps lower API.
+
+#whipser api
 https://github.com/ethereum/wiki/wiki/Whisper
 
 https://ethereum.stackexchange.com/questions/24338/looking-for-a-working-whisper-example
