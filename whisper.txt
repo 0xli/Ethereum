@@ -14,6 +14,11 @@ var kIdPub = web3.shh.getPublicKey(kId)
 web3.shh.post({pubKey:kIdPub,ttl:7,topic:'0x07678231',powTarget:2.01,powTime:2,payload:web3.fromAscii("Hello there!There")})
 
 #mailserver
+https://github.com/ethereum/go-ethereum/wiki/Diagnostic-Tool-wnode
+https://geth.ethereum.org/whisper/Diagnostic-Tool-wnode
+https://ethereum.stackexchange.com/questions/66294/how-to-enable-mail-server-mailserver-when-starting-a-whisper-node-by-using-ge
+
+#other solutions
 https://github.com/orbitdb/orbit-db
 https://medium.com/originprotocol/introducing-origin-messaging-decentralized-secure-and-auditable-13c16fe0f13e
 https://discuss.status.im/t/rethinking-mail-servers/390
