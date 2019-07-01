@@ -1,3 +1,7 @@
+###To Do List:
+1. 保存Token-IM发出的广播消息： save Token-IM's public chat message in wnode mailserver
+2. Token-IM上线时取离线的消息：retrive offline message when online
+
 ## 1
 #wnode -generatekey >wnodekey.txt
 cat wnodekey.txt 
