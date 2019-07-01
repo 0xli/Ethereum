@@ -1,0 +1,45 @@
+## 1
+#wnode -generatekey >wnodekey.txt
+cat wnodekey.txt 
+d96468806b4f32a040832495281917c19b93dab1929a8c27deb145e85988bba1 
+
+##2
+##mailserver
+#wnode -pub=0xba743716d9f7fc14d4c461750f1a7a08ba6a0b6d224f0e5316c336487eeadeb0  -boot=enode://c8385f5c78ab5d61d1603493a66ffb09221df5072d6ea70e8fb3260ae69a338c0ae7fad31d1d60e1c60fb8669faab7e74c30e8f83e9a8316a8d8b6f937490d7c@192.168.0.206:30303 -mailserver -forwarder -ip=127.0.0.1:30381 -dbpath=node -pow=2.01 -mspow=2.01 -verbosity=3 -idfile=wnodekey.txt
+
+Please enter the Mail Server password: 
+INFO [07-01|13:17:13.526] New local node record                    seq=1 id=9433aa15748d95c8 ip=127.0.0.1 udp=30381 tcp=30381
+my public key: 0x041df7eda2679b48dd8e35228ac5150dcb9429fe90e37e456eedccbb21f692bc4f98eba3fd830a04c2be9685495b5cbb1fcf4c84e15aa4210f60fd287c4f0d78f2 
+enode://29fa802123727ec05ec7abbfe01691ff6ed7deb5e5b03aaa4e0619dd3d3780d7feec42aeaa127f7188b89335b05423ead44e0cce0f06582f1eedfde95de41bf6@127.0.0.1:30381
+Whisper node started
+INFO [07-01|13:17:13.528] Started P2P networking                   self=enode://29fa802123727ec05ec7abbfe01691ff6ed7deb5e5b03aaa4e0619dd3d3780d7feec42aeaa127f7188b89335b05423ead44e0cce0f06582f1eedfde95de41bf6@127.0.0.1:30381
+Connected to peer.
+INFO [07-01|13:17:13.576] started whisper v.6.0 
+
+##3
+#test console for send
+ wnode -pub=0xba743716d9f7fc14d4c461750f1a7a08ba6a0b6d224f0e5316c336487eeadeb0  -boot=enode://29fa802123727ec05ec7abbfe01691ff6ed7deb5e5b03aaa4e0619dd3d3780d7feec42aeaa127f7188b89335b05423ead44e0cce0f06582f1eedfde95de41bf6@127.0.0.1:30381 -mailclient -topic=ffffffff -pow=2.01 -mspow=2.01 -work=2
+
+my public key: 0x04eab6b62ba52ac126aa4ea3ad71e1879cdf30607bb24d1d8085380d3295363b1dbb2321c82f0583ef2a8f5b57add1561ad4f088e28338e8e97d5dda4e965737c1 
+enode://ed313f651955094e9f28c18c15eb425f4667d480b52597e012f2f964816fe14f68766aec2d44e04063df7af68fb70c427854daa6ae649052e542275e66e78dc4@127.0.0.1:0?discport=46437
+Whisper node started
+Connected to peer.
+Please enter the Mail Server password: 
+Please enter the password for symmetric encryption: 
+Filter is configured for the topic: ffffffff 
+Please type the message. To quit type: '~Q'
+Please enter the lower limit of the time range (unix timestamp): 
+
+##4 
+#mailclient
+wnode -pub=0xba743716d9f7fc14d4c461750f1a7a08ba6a0b6d224f0e5316c336487eeadeb0  -boot=enode://29fa802123727ec05ec7abbfe01691ff6ed7deb5e5b03aaa4e0619dd3d3780d7feec42aeaa127f7188b89335b05423ead44e0cce0f06582f1eedfde95de41bf6@127.0.0.1:30381 -mailclient -topic=ffffffff -pow=2.01 -mspow=2.01 -work=2
+
+my public key: 0x04eab6b62ba52ac126aa4ea3ad71e1879cdf30607bb24d1d8085380d3295363b1dbb2321c82f0583ef2a8f5b57add1561ad4f088e28338e8e97d5dda4e965737c1 
+enode://ed313f651955094e9f28c18c15eb425f4667d480b52597e012f2f964816fe14f68766aec2d44e04063df7af68fb70c427854daa6ae649052e542275e66e78dc4@127.0.0.1:0?discport=46437
+Whisper node started
+Connected to peer.
+Please enter the Mail Server password: 
+Please enter the password for symmetric encryption: 
+Filter is configured for the topic: ffffffff 
+Please type the message. To quit type: '~Q'
+Please enter the lower limit of the time range (unix timestamp): 
