@@ -60,3 +60,28 @@ Experience:
 
 Finnally got nodes sync cross diefferent LANs as fast as light, the key is to make sure no error on any signer node . 05-01-02
 Tested use metamask to transfer ETH and FAX .
+
+#not generate empty block
+https://ethereum.stackexchange.com/questions/45067/geth-clique-consensus-skip-empty-blocks
+https://ethereum.stackexchange.com/questions/3151/how-to-make-miner-to-mine-only-when-there-are-pending-transactions/3152#3152
+need use console, daemon will not work
+if you run geth in the background, you must geth attach node1/geth.ipc and execute
+loadScript('skipempty.js')
+var mining_threads = 1
+
+function checkWork() {
+    if (eth.getBlock("pending").transactions.length > 0) {
+        if (eth.mining) return;
+        console.log("== Pending transactions! Mining...");
+        miner.start(mining_threads);
+    } else {
+        if (!eth.mining) return;
+        miner.stop();
+        console.log("== No transactions! Mining stopped.");
+    }
+}
+
+eth.filter("latest", function(err, block) { checkWork(); });
+eth.filter("pending", function(err, block) { checkWork(); });
+
+checkWork();
