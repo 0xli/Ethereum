@@ -62,6 +62,25 @@ Finnally got nodes sync cross diefferent LANs as fast as light, the key is to ma
 Tested use metamask to transfer ETH and FAX .
 
 #not generate empty block
+#solution 1
+https://ethereum.stackexchange.com/questions/63686/poa-private-net-keeps-mining-blocks-at-high-rate-with-no-transactions?rq=1
+et BlockTime to 0. With that, mining will be done only when needed. For example :
+
+  "clique": {
+    "period": 0,
+    "epoch": 30000
+  }
+https://github.com/ethereum/go-ethereum/pull/15323
+For 0-period clique miners, commit new mining work whenever a transaction arrives
+This allows each transaction to be instantly included (this may need tuning though).
+// For 0-period chains, refuse to seal empty blocks (no reward but would spin sealing)
+	if c.config.Period == 0 && len(block.Transactions()) == 0 {
+		log.Info("Sealing paused, waiting for transactions")
+		return nil
+	}
+https://github.com/ethereum/go-ethereum/blob/master/consensus/clique/clique.go#L600
+
+#solution 2
 https://ethereum.stackexchange.com/questions/45067/geth-clique-consensus-skip-empty-blocks
 https://ethereum.stackexchange.com/questions/3151/how-to-make-miner-to-mine-only-when-there-are-pending-transactions/3152#3152
 need use console, daemon will not work
