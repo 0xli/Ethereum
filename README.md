@@ -27,6 +27,8 @@ https://github.com/ethereumbook/ethereumbook
 1.  geth --datadir node1 init devnet.json
 2.  geth --datadir node1 --syncmode full --port 30303 --rpc --rpcaddr "0.0.0.0" --rpcport 8545 --rpcapi "personal,db,eth,net,web3,txpool,miner" --bootnodes "enode://11e1d914c7d4b09f5cbf6ff238ee9fede90fc8cb60484856848421971203b58484023b44771161dc229447b398fbaf4b122611d282bda54555c3089cb3c294b6@118.190.79.30:30307" --networkid 1515 --gasprice 1  --lightserv 30 --rpccorsdomain "*" console
 
+geth在KVM的centos虚拟机中运行时导致宿主机和虚拟机的CPU占用高
+
 # get release version
 git clone https://github.com/ethereum/go-ethereum.git go-ethereum-1.8
 
