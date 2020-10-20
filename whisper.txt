@@ -55,7 +55,9 @@ Filter is configured for the topic: 5a4ea131
 Please type the message. To quit type: '~Q'
 
 1561618187 [8bc66d2330230fa8849035ee3d3d5038fecd97b1]: dfsfsfs
-
+# whisper to waku
+https://our.status.im/breaking-down-the-private-secure-messenger/
+https://specs.vac.dev/specs/waku/waku.html
 
 #other solutions
 https://github.com/orbitdb/orbit-db
