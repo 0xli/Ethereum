@@ -70,3 +70,6 @@ https://katzenpost.mixnetworks.org/index.html
 https://katzenpost.mixnetworks.org/docs/faq.html
 
 https://mixnetworks.org/
+https://docs.hoprnet.org/home/
+#Sphinx packet format 
+https://cypherpunks.ca/~iang/pubs/Sphinx_Oakland09.pdf
