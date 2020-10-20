@@ -57,3 +57,10 @@ Please type the message. To quit type: '~Q'
 https://github.com/orbitdb/orbit-db
 https://medium.com/originprotocol/introducing-origin-messaging-decentralized-secure-and-auditable-13c16fe0f13e
 https://discuss.status.im/t/rethinking-mail-servers/390
+
+#mix network
+https://en.wikipedia.org/wiki/Mix_network
+* mix, tor and pond
+https://www.youtube.com/watch?v=1VMUb47QhfE
+https://katzenpost.mixnetworks.org/index.html
+https://katzenpost.mixnetworks.org/docs/faq.html
