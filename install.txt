@@ -9,3 +9,6 @@ https://geth.ethereum.org/docs/install-and-build/installing-geth
 go get -d github.com/ethereum/go-ethereum@v1.8.27
 https_proxy=http://192.168.0.163:10809 go get -d github.com/ethereum/go-ethereum@v1.8.27
 https_proxy=http://192.168.0.163:10809 go install github.com/ethereum/go-ethereum/cmd/geth@v1.8.27
+
+proxychains4 git clone https://github.com/ethereum/go-ethereum.git
+git checkout v1.8.27
