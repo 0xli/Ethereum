@@ -3,6 +3,8 @@ https://swarm-guide.readthedocs.io/en/latest/introduction.html
 https://swarm-guide.readthedocs.io/en/latest/usage.html
 https://swarm-gateways.net/bzz:/theswarm.eth/
 
+https://medium.com/ethereum-swarm/pinning-files-in-swarm-efcecaf71d41
+
 1. upload file
 curl -H "Content-Type:image/jpeg" --data-binary @cat.jpg http://192.168.0.178:8500/bzz:/
 fb45d1e785834e3a12842c4c26e00f4c7dd78c5aafd371017717b94c79c7694d
