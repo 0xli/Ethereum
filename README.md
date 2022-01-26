@@ -22,8 +22,13 @@ https://www.cnblogs.com/weifeng1463/p/7488862.html
 https://github.com/ethereumbook/ethereumbook
 
 # Download
- https://geth.ethereum.org/downloads/
- need genisys file devnet.json and static-nodes.json
+https://gethstore.blob.core.windows.net/builds/geth-alltools-linux-amd64-1.8.27-4bcc0a37.tar.gz
+
+Other versions:
+
+https://geth.ethereum.org/downloads/
+ 
+need genisys file devnet.json and static-nodes.json
 1.  geth --datadir node1 init devnet.json
 2.  geth --datadir node1 --syncmode full --port 30303 --rpc --rpcaddr "0.0.0.0" --rpcport 8545 --rpcapi "personal,db,eth,net,web3,txpool,miner" --bootnodes "enode://11e1d914c7d4b09f5cbf6ff238ee9fede90fc8cb60484856848421971203b58484023b44771161dc229447b398fbaf4b122611d282bda54555c3089cb3c294b6@118.190.79.30:30307" --networkid 1515 --gasprice 1  --lightserv 30 --rpccorsdomain "*" console
 
