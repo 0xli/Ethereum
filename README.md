@@ -1,10 +1,13 @@
 # Ethereum
 ## All about ethereum regarding DAPP development
-Building Full Stack dApps with React, Ethers.js, Solidity, and Hardhat, Alchemy, MetaMask, and TailwindCSS
+Building Full Stack dApps with React, Ethers.js, Solidity, and Hardhat, Alchemy, MetaMask, and TailwindCSS, Openzeppelin
 -  https://dev.to/dabit3/the-complete-guide-to-full-stack-ethereum-development-3j13
 -  https://steadylearner.medium.com/how-to-make-a-fullstack-dapp-with-react-hardhat-and-ethers-js-with-examples-a961979273d9
 Fullstack NFT Minting Dapp Using Next.js, Hardhat, Ethers.js, Alchemy, MetaMask, and TailwindCSS
 -  https://javascript.plainenglish.io/fullstack-nft-minting-dapp-using-next-js-hardhat-ethers-js-alchemy-metamask-and-tailwindcss-145e0ef41d26
+### Solidity
+-  https://openzeppelin.com/contracts/
+-  
 ## Ethereum node
 - https://github.com/ethereum/go-ethereum/wiki/Building-Ethereum
 
