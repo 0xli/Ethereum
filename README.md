@@ -4,6 +4,7 @@ Building Full Stack dApps with React, Ethers.js, Solidity, and Hardhat, Alchemy,
 -  https://www.web3.university/article/how-to-build-a-react-dapp-with-hardhat-and-metamask
 -  https://dev.to/dabit3/the-complete-guide-to-full-stack-ethereum-development-3j13
 -  https://steadylearner.medium.com/how-to-make-a-fullstack-dapp-with-react-hardhat-and-ethers-js-with-examples-a961979273d9
+-  https://www.quicknode.com/guides/web3-sdks/how-to-build-your-dapp-using-the-modern-ethereum-tech-stack-hardhat-and-ethersjs
 Fullstack NFT Minting Dapp Using Next.js, Hardhat, Ethers.js, Alchemy, MetaMask, and TailwindCSS
 -  https://javascript.plainenglish.io/fullstack-nft-minting-dapp-using-next-js-hardhat-ethers-js-alchemy-metamask-and-tailwindcss-145e0ef41d26
 ### Solidity
