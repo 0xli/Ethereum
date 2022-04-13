@@ -36,6 +36,8 @@ https://github.com/ethereumbook/ethereumbook
 https://gethstore.blob.core.windows.net/builds/geth-alltools-linux-amd64-1.8.27-4bcc0a37.tar.gz
 
 Other versions:
+- https://geth.ethereum.org/downloads/
+- https://gethstore.blob.core.windows.net/builds/geth-alltools-linux-amd64-1.10.17-25c9b49f.tar.gz
 
 https://geth.ethereum.org/downloads/
  
